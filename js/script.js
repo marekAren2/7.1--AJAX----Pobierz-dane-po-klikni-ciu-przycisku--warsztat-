@@ -3,7 +3,7 @@ let getDataH = document.querySelector('#get-data')
 
 const getData = () => {
     console.log("w funkcji działa");
-    fetch('https://akademia108.pl/api/ajax/get-pst.php')
+    fetch('https://akademia108.pl/api/ajax/get-post.php')
     .then(odp => odp.json())
         // console.log("🚀 ~ file: script.js:8 ~ getData ~ resp.json():", response.json())
         // console.log("🚀 ~ file: script.js:8 ~ getData ~ resp:", respo2)     
