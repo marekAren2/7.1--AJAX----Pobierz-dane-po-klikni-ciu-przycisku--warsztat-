@@ -3,7 +3,7 @@ let getDataH = document.querySelector('#get-data')
 
 const getData = () => {
     console.log("w funkcji działa");
-    fetch('https://akademia108.pl/api/ajax/get-post.php')
+    fetch('https://akademia108.pl/api/ajax/get-pst.php')
     .then(odp => odp.json())
         // console.log("🚀 ~ file: script.js:8 ~ getData ~ resp.json():", response.json())
         // console.log("🚀 ~ file: script.js:8 ~ getData ~ resp:", respo2)     
@@ -21,7 +21,7 @@ const getData = () => {
         elementDiv.innerHTML = `Id: ${Pid} UserId: ${PuserId} <br> Title: ${Ptitle} <br> Body: ${Pbody} <hr>`
         document.body.appendChild(elementDiv)
     })
-    .catch(error => {console.log(error)})
+    .catch(error => {console.warn(error)})
 
      
 }
