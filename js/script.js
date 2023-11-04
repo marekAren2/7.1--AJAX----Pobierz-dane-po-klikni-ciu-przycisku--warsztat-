@@ -21,7 +21,7 @@ const getData = () => {
         elementDiv.innerHTML = `Id: ${Pid} UserId: ${PuserId} <br> Title: ${Ptitle} <br> Body: ${Pbody} <hr>`
         document.body.appendChild(elementDiv)
     })
-        // .catch(error => {console.error(error)})
+    .catch(error => {console.log(error)})
 
      
 }
